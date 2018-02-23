@@ -1,0 +1,15 @@
+@startuml
+
+class Course {
+    - name: String
+    - students: String[]
+    - studentsCount: int
+    + <<constructor>> Course(name: String)
+    + getName(): String
+    + addStudent(student: String): void
+    + removeStudent(student: String): void
+    + getStudents(): String[]
+    + getStudentsCount(): int
+}
+
+@enduml
